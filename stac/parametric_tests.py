@@ -140,8 +140,8 @@ def bonferroni_test(pivots, n):
         D.J. Sheskin, Handbook of parametric and nonparametric statistical procedures. crc Press, 2003, Test 21b: The Bonferroni-Dunn test
     """
     k = len(pivots)
-    values = pivots.values()
-    keys = pivots.keys()
+    values = list(pivots.values())
+    keys = list(pivots.keys())
 
     m = (k*(k-1))/2.
 
